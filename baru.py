@@ -6,7 +6,8 @@ st.set_page_config(page_title='Concentration Machine', page_icon=':🤖:',layout
 image=Image.open('coverr.JPEG')
 st.image(image, width=None)
                 
-navbar=option_menu(menu_title=None, options=['Home','Konsentrasi',])
+navbar=option_menu(menu_title=None, options=['Home','Konsentrasi',],
+                  icons=['house','calculator'])
 if navbar=='Home':
     st.title('📍 Aplikasi Perhitungan Konsentrasi Larutan')
     st.write('Sebuah aplikasi berbasis website yang dapat digunakan untuk menghitung konsentrasi larutan dengan mudah. Terdapat beberapa satuan konsentrasi yang dapat dihitung menggunakan aplikasi ini, diantaranya molaritas, molalitas, normalitas, fraksi mol, dan kadar (%).')
